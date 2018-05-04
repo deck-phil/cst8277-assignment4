@@ -1,0 +1,23 @@
+<!--
+File: strings.xml
+Modified By: Stanley Pieda
+Date: March 2018
+Based strongly on work by Deitel et. al. 2015
+Reference:
+Paul Deitel, Harvey Deitel, Alexander Wald. (2015). Android™ 6 for Programmers: An App-Driven Approach, Third Edition
+Prentice Hall, ISBN: 0-13-428936-6. Chapter 7 WeatherViewer App pp256-285
+-->
+<resources>
+    <string name="app_name">Assignment4AndroidClient_REST</string>
+    <string name="action_settings">Settings</string>
+    <string name="web_service_url">http://10.70.200.241:8080/Assignment4-war/webresources/entity.fishstick/</string>
+    <string name="invalid_url">Invalid URL</string>
+    <string name="fishStick_id">ID: %s</string>
+    <string name="fishStick_recordNumber">Record Number: %s</string>
+    <string name="fishStick_omega">Omega: %s</string>
+    <string name="fishStick_lambda">Lambda: %s</string>
+    <string name="fishStick_uuid">UUID: %s</string>
+    <string name="hint_text">Enter id value</string>
+    <string name="read_error">Unable to read data</string>
+    <string name="connect_error">Unable to connect to web service</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+File: StuffSearch.fxml
+Author: Stanley Pieda
+The code and methods in this file originally came from Edgar Martinez et. al. (n.d.)
+They have been modified slightly to work with a DemoStuff application server for educational purposes.
+Edgar Martinez, Susan Moxley, and Juan Quezada (n.d.). Developing an Enterprise Application with JavaFX 2.0 and Java EE 7. [online]. Retrieved from
+http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/javafx_json_tutorial/javafx_javaee7_json_tutorial.html
+-->
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FishStickSearchController">
+    <children>
+        <Button fx:id="buttonSearch" layoutX="541.0" layoutY="14.0" onAction="#handleSearchAction" text="Search" />
+        <TextField fx:id="textFieldSearch" layoutX="14.0" layoutY="14.0" onAction="#handleSearchAction" prefHeight="25.0" prefWidth="517.0" />
+        <TableView fx:id="tableView" layoutX="14.0" layoutY="54.0" prefHeight="524.0" prefWidth="581.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="id">
+                    <cellValueFactory>   
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="100.0" text="Record Number">
+                    <cellValueFactory>            
+                        <PropertyValueFactory property="recordNumber" />          
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="150.0" text="Omega">
+                    <cellValueFactory>            
+                        <PropertyValueFactory property="omega" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="150.0" text="Lambda">
+                    <cellValueFactory>            
+                        <PropertyValueFactory property="lambda" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="250.0" text="UUID">
+                    <cellValueFactory>            
+                        <PropertyValueFactory property="uuid" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

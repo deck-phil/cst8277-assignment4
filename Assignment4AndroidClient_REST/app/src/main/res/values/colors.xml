@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+File: activity_main.xml
+Modified By: Stanley Pieda
+Date: March 2018
+Based strongly on work by Deitel et. al. 2015
+Reference:
+Paul Deitel, Harvey Deitel, Alexander Wald. (2015). Android™ 6 for Programmers: An App-Driven Approach, Third Edition
+Prentice Hall, ISBN: 0-13-428936-6. Chapter 7 WeatherViewer App pp256-285
+-->
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#448AFF</color>
+</resources>

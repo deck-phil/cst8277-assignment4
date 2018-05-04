@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewFishStickTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewFishStickLabel_recordNumber}"/>
+                    <h:outputText value="#{fishStickController.selected.recordNumber}" title="#{bundle.ViewFishStickTitle_recordNumber}"/>
+                    <h:outputText value="#{bundle.ViewFishStickLabel_omega}"/>
+                    <h:outputText value="#{fishStickController.selected.omega}" title="#{bundle.ViewFishStickTitle_omega}"/>
+                    <h:outputText value="#{bundle.ViewFishStickLabel_lambda}"/>
+                    <h:outputText value="#{fishStickController.selected.lambda}" title="#{bundle.ViewFishStickTitle_lambda}"/>
+                    <h:outputText value="#{bundle.ViewFishStickLabel_uuid}"/>
+                    <h:outputText value="#{fishStickController.selected.uuid}" title="#{bundle.ViewFishStickTitle_uuid}"/>
+                    <h:outputText value="#{bundle.ViewFishStickLabel_id}"/>
+                    <h:outputText value="#{fishStickController.selected.id}" title="#{bundle.ViewFishStickTitle_id}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{fishStickController.destroyAndView}" value="#{bundle.ViewFishStickDestroyLink}"/>
+                <br />
+                <br />
+                <h:link outcome="Edit" value="#{bundle.ViewFishStickEditLink}"/>
+                <br />
+                <h:commandLink action="#{fishStickController.prepareCreate}" value="#{bundle.ViewFishStickCreateLink}" />
+                <br />
+                <h:commandLink action="#{fishStickController.prepareList}" value="#{bundle.ViewFishStickShowAllLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewFishStickIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
